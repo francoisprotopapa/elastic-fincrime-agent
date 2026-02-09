@@ -15,10 +15,10 @@ The repository is organized into four main directories to separate data, agent l
 
 ### `data/`
 Contains the source datasets (NDJSON format) required to populate the Elasticsearch indices. These files are the foundation for all demo scenarios (e.g., the "Baker" case, the "Volkov" cluster).
-* `clients.ndjson` → Index: `ubs-global-clients`
-* `transactions.ndjson` → Index: `ubs-transactions`
-* `policies.ndjson` → Index: `ubs-internal-policies`
-* `news.ndjson` → Index: `ubs-external-news`
+* `clients.ndjson` → Index: `global-clients`
+* `transactions.ndjson` → Index: `transactions`
+* `policies.ndjson` → Index: `internal-policies`
+* `news.ndjson` → Index: `external-news`
 
 ### `prompts/`
 Contains the **System Prompts** and **Scenario Scripts** that define the "brain" and behavior of the AI Agents.
