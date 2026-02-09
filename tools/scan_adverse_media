@@ -1,0 +1,19 @@
+Tool ID: scan_adverse_media
+
+Type: Index Search
+
+Target pattern: external-news
+
+Custom instructions:
+Use this tool to search for external news, adverse media, and leaks related to a client or a company.
+This tool searches the 'fin-news' index.
+
+CAPABILITIES:
+- Helps confirm suspicions (e.g., if you suspect a shell company, search for leaks linking it to a UBO).
+- Helps reduce False Positives (e.g., verify if a client's wealth source is legitimate, like winning a prize).
+- Checks for negative sentiment and risk labels (Sanctions, Environmental Crime, Cybercrime).
+
+REQUIRED TOOL. Use this whenever investigating a person.
+It searches the 'news' index for ANY mention of the client's name.
+Input: Just the name (e.g., "Luca Moretti").
+Goal: Find positive or negative news.
