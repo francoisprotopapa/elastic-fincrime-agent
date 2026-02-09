@@ -9,6 +9,31 @@ Traditional rule-based systems generate 95%+ False Positives. This project demon
 2.  **Detect Hidden Risks:** By using Semantic Search on unstructured transaction notes (e.g., Sanctions evasion).
 3.  **Unify Identities:** By performing Entity Resolution across global client databases (Single Client View).
 
+## 📂 Project Structure
+
+The repository is organized into four main directories to separate data, agent logic, tool configuration, and documentation:
+
+### `data/`
+Contains the source datasets (NDJSON format) required to populate the Elasticsearch indices. These files are the foundation for all demo scenarios (e.g., the "Baker" case, the "Volkov" cluster).
+* `clients.ndjson` → Index: `ubs-global-clients`
+* `transactions.ndjson` → Index: `ubs-transactions`
+* `policies.ndjson` → Index: `ubs-internal-policies`
+* `news.ndjson` → Index: `ubs-external-news`
+
+### `prompts/`
+Contains the **System Prompts** and **Scenario Scripts** that define the "brain" and behavior of the AI Agents.
+* `system_prompt.md`: The system instructions for the **Financial Crime Investigator** (Generalist).
+* `identity_agent.md`: The system instructions for the **Global Identity Specialist** (SCV).
+* `demo_scenarios.md`: The exact prompts to copy-paste during the live demo.
+
+### `tools/`
+Contains the specific **Tool Definitions** (JSON configuration) required to set up the tools within Elastic Agent Builder.
+* Includes the specific parameters and descriptions for tools like `search_global_client_database`, `scan_adverse_media`, etc.
+
+### `presentation/`
+Contains the **Slide Deck** (PDF/PPTX) used to present the use case, architecture, and business value of this solution.
+* Ideal for explaining the concept to stakeholders before showing the technical implementation.
+
 ## 📂 Dataset Structure (Indices)
 
 The solution relies on 4 Elasticsearch indices. Source files are located in the `/data` folder:
