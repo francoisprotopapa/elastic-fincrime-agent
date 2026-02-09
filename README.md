@@ -30,10 +30,10 @@ Copy the content from `prompts/system_prompt.md` into the Agent's System Prompt 
 ### 2. Tools Definition
 Create 4 tools in Elastic Agent Builder mapped to the indices above:
 
-* **Tool:** `search_global_client_database` (Index: `ubs-global-clients`)
-* **Tool:** `analyze_transaction_patterns` (Index: `ubs-transactions`)
-* **Tool:** `consult_compliance_handbook` (Index: `ubs-internal-policies`)
-* **Tool:** `scan_adverse_media` (Index: `ubs-external-news`)
+* **Tool:** `search_global_client_database` (Index: `global-clients`)
+* **Tool:** `analyze_transaction_patterns` (Index: `transactions`)
+* **Tool:** `consult_compliance_handbook` (Index: `internal-policies`)
+* **Tool:** `scan_adverse_media` (Index: `external-news`)
 
 ## 🎬 Demo Scenarios
 
