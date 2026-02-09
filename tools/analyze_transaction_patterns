@@ -1,0 +1,9 @@
+Tool ID: analyze_transaction_patterns
+
+Type: Index Search
+
+Target pattern: transactions
+
+Custom instructions:
+Use this tool to search and analyze the financial transaction logs of clients.
+This tool allows you to find specific transactions linked to a user or to detect broader anomalous patterns across the entire bank.
