@@ -1,0 +1,10 @@
+Tool ID: search_global_client_database
+
+Type: Index Search
+
+Target pattern: global-clients
+
+Custom instructions:
+Use this tool to investigate financial crime risks by searching the 'global-clients' index.
+This tool performs a HYBRID SEARCH (Keyword + Vector) to uncover hidden risks in structured and unstructured data.
+
