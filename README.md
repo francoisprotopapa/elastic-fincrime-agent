@@ -74,11 +74,17 @@ Create 4 tools in Elastic Agent Builder mapped to the indices above:
 
 ## 🎬 Demo Scenarios
 
-Detailed prompts for live demonstrations are available in `prompts/demo_scenarios.md`.
+Detailed step-by-step scripts, prompts, and narratives for the live demonstration are available in **[SCENARIOS.md](SCENARIOS.md)**.
 
-* **Scenario 1:** The Baker (False Positive reduction via News).
-* **Scenario 2:** Eastern Logistics (Sanctions detection via Semantic Search).
-* **Scenario 3:** The Volkov Cluster (Global Entity Resolution).
+The demo follows a **"Top-Down" Investigation Workflow**, designed to simulate a real-world Chief Risk Officer (CRO) experience:
 
----
-*Built with Elastic AI Assistant.*
+1.  **🌍 Phase 1: General Discovery (The Morning Briefing)**
+    * *Goal:* Proactively scan the entire dataset to identify top threats without knowing the targets beforehand.
+    * *Outcome:* The AI autonomously identifies 3 critical cases.
+
+2.  **🔍 Phase 2: Deep Dive Investigations**
+    * **Case A (Sanctions):** Detecting hidden risks in transaction notes (*Eastern Logistics*).
+    * **Case B (Efficiency):** Automating False Positive reduction via News (*Luca Moretti*).
+    * **Case C (Entity Resolution):** Uncovering hidden networks and Regulatory Arbitrage (*Volkov Cluster*).
+
+*Refer to the `SCENARIOS.md` file for the exact prompts to copy-paste during the demo.*
