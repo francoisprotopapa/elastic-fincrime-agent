@@ -1,0 +1,68 @@
+# 🎬 Live Demo Scenarios: The "Top-Down" Investigation
+
+This document outlines the demo flow. We start with a **General Discovery** (Acting as a Chief Risk Officer) to find threats, and then **Deep Dive** into specific cases based on the AI's findings.
+
+## ⚠️ Pre-requisites
+1.  **Agent:** Select "Financial Crime Investigator".
+2.  **Time Picker:** Set to **"Last 1 Year"** (Critical: Data covers May-July 2024).
+
+---
+
+## 🌍 PHASE 1: DISCOVERY (The Morning Briefing)
+**Context:** It's Monday morning. You act as the Chief Risk Officer (CRO). You don't have a specific target; you want the AI to tell you what the biggest threats are right now across the entire bank.
+
+### 📋 The Prompt
+> **"Act as the Chief Risk Officer. Perform a comprehensive threat scan across all transaction logs from May to July 2024.**
+>
+> **Your goal is to identify the TOP 3 most critical financial crime patterns currently active in our system.**
+>
+> **EXECUTE THIS STRATEGY:**
+> **1. BROAD SCAN:** Search logs for high-risk semantic keywords (e.g., 'Structuring', 'Sanctions', 'Trafficking', 'Identity').
+> **2. VERIFY:** For every suspicious entity found, briefly cross-reference with External News.
+> **3. REPORT:** List the Top 3 threats found."
+
+### 🗣️ What to Say (The Narrative)
+* "We are shifting from reactive to **proactive**. I don't know who the criminals are yet."
+* "Watch the **Chain of Thought**: The Agent is planning. It scans logs, filters for severity, and checks the news automatically."
+* "The AI should identify three key targets: **Eastern Logistics** (Sanctions), **Luca Moretti** (Structuring), and **Volkov** (Identity)."
+
+---
+
+## 🔍 PHASE 2: DEEP DIVE INVESTIGATIONS
+*Now that the AI has highlighted the threats, we investigate them one by one.*
+
+### 🔴 Case A: The "Red Alert" (Sanctions Evasion)
+**Context:** The scan flagged *Eastern Logistics* due to a vessel seizure. We need to confirm the link to the transaction.
+
+### 📋 The Prompt
+> **"Deep Dive on 'Eastern Logistics FZE'. Analyze the specific transaction notes for Sanctions Evasion risks (look for port names) and cross-reference with the specific adverse media article found. Determine the final risk level."**
+
+### 🎯 Key Insight
+* **Vector Search Power:** The AI links the obscure note "Delivery to Bandar Abbas" with the news "Vessel seized in Iran".
+* **Outcome:** **Critical Risk**. Immediate Block.
+
+---
+
+### 🟢 Case B: The "False Alarm" (Operational Efficiency)
+**Context:** The scan flagged *Luca Moretti* for "Structuring" (cash deposits). We need to verify if this is money laundering or a legitimate event.
+
+### 📋 The Prompt
+> **"Deep Dive on 'Luca Moretti'. Investigate his recent cash deposits for AML Structuring. IMMEDIATELY search External News for a 'Source of Wealth' (e.g., lottery, prize, sale) that explains these specific amounts. Decide if this is a True Positive or False Positive."**
+
+### 🎯 Key Insight
+* **Contextual Intelligence:** The AI finds the "Baker Wins Prize" article.
+* **Outcome:** **False Positive**. The alert is dismissed automatically. This saves 45 minutes of manual work.
+
+---
+
+### 🕵️‍♂️ Case C: The "Hidden Network" (Entity Resolution)
+**Context:** The scan flagged a potential "Volkov Cluster" or identity issue. We need to see if he is hiding risk across regions.
+
+### 📋 The Prompt
+> **"Perform a global 'Single Client View' Deep Dive on the 'Alexander Volkov' cluster (DOB 1980-05-15). Scan for phonetic name variations (Volkov/Volkoff) across EMEA, AMER, and APJ. Compare the Risk Scores of each profile to detect Regulatory Arbitrage."**
+
+### 🎯 Key Insight
+* **Breaking Silos:** The AI connects "Alex Volkoff" (USA - Medium Risk) with "Oleksandr Volkov" (Singapore - High Risk).
+* **Outcome:** **Regulatory Arbitrage Detected**. The client is hiding high-risk activity behind a clean profile in another region.
+
+---
