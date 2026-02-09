@@ -1,5 +1,5 @@
 # 🕵️‍♂️ Elastic AI Financial Crime Investigator # elastic-fincrime-agent
-AI-powered Financial Crime Investigator built with Elastic Agent Builder. Uses Agentic RAG to orchestrate AML, Sanctions, and Entity Resolution workflows across distributed datasets.
+Agent AI-powered Financial Crime Investigator built with Elastic Agent Builder. Uses Agentic RAG to orchestrate AML, Sanctions, and Entity Resolution workflows across distributed datasets.
 This repository contains the datasets, prompts, and configuration logic to build an **Agentic RAG** solution for Anti-Money Laundering (AML) and Financial Fraud detection using **Elastic Agent Builder**.
 
 ## 🚀 Overview
