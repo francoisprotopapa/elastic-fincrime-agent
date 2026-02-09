@@ -1,0 +1,17 @@
+Tool ID: consult_compliance_handbook
+
+Type: Index Search
+
+Target pattern: internal-policies
+
+Custom instructions:
+Use this tool to search the Bank Internal Policy & Legal Framework database.
+You must use this tool whenever you detect a suspicious pattern to verify if it constitutes a violation.
+
+CAPABILITIES:
+- Retrieves specific Policy IDs (e.g., AML-100), Procedures, and Legal consequences.
+- Uses Semantic Search on the 'semantic_text' field to understand concepts (e.g., if you search for "hiding money in real estate", it will find the "Real Estate Laundering" policy even without exact keyword matches).
+
+INSTRUCTIONS:
+- Always search for the *behavior* observed (e.g., "structuring", "shared address", "whatsapp communication").
+- In your final response, you MUST cite the 'policy_id', the 'sla_hours', and the 'severity' found in the document.
