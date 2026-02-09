@@ -22,10 +22,30 @@ The solution relies on 4 Elasticsearch indices. Source files are located in the 
 
 ## 🤖 Agent Configuration
 
-To replicate this agent in Elastic:
+This repository includes prompts for **two distinct Agent personas**. You can create both in Elastic Agent Builder to demonstrate different workflows.
 
-### 1. System Prompt
-Copy the content from `prompts/system_prompt.md` into the Agent's System Prompt configuration. This defines the "Chain of Thought" logic (Identify -> Analyze -> Contextualize -> Adjudicate).
+### 🕵️‍♂️ Agent 1: The Financial Crime Investigator (Generalist)
+*The main agent used for the full demo. It orchestrates all data sources to detect complex crimes.*
+
+* **Name:** `UBS Financial Crime Investigator`
+* **Description:** `Autonomous agent capable of investigating AML, Sanctions, and Fraud by cross-referencing internal data with external intelligence.`
+* **System Prompt:** Copy content from `prompts/system_prompt.md`
+* **Tools Required:** All 4 Tools
+    * `search_global_client_database`
+    * `analyze_transaction_patterns`
+    * `consult_compliance_handbook`
+    * `scan_adverse_media`
+
+---
+
+### 🆔 Agent 2: The Global Identity Specialist (Specialist)
+*A dedicated sub-agent focused solely on cleaning data and finding hidden duplicate identities (Single Client View).*
+
+* **Name:** `Global Identity Resolution Analyst`
+* **Description:** `Specialized agent for detecting Identity Fragmentation, Duplicate Profiles, and Regulatory Arbitrage across regions.`
+* **System Prompt:** Copy content from `prompts/identity_agent.md`
+* **Tools Required:** Only 1 Tool
+    * `search_global_client_database` (Index: `ubs-global-clients`)
 
 ### 2. Tools Definition
 Create 4 tools in Elastic Agent Builder mapped to the indices above:
