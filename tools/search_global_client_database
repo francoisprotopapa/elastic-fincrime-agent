@@ -5,6 +5,24 @@ Type: Index Search
 Target pattern: global-clients
 
 Custom instructions:
-Use this tool to investigate financial crime risks by searching the 'global-clients' index.
+Use this tool to investigate financial crime risks by searching the 'ubs-global-clients' index.
 This tool performs a HYBRID SEARCH (Keyword + Vector) to uncover hidden risks in structured and unstructured data.
+
+YOU MUST USE THIS TOOL FOR:
+
+1.  **Single Client View (Entity Resolution):**
+    -   To find duplicate identities across regions (EMEA, AMER, APJ).
+    -   It automatically handles name variations (e.g., "Volkov" vs "Volkoff") and allows filtering by strong identifiers like Date of Birth ('dob') or Passport ID.
+
+2.  **Semantic Risk Detection (Unstructured Notes):**
+    -   To search within the 'notes' field for concepts, not just keywords.
+    -   USE THIS for queries like: "Find hidden UBOs", "Detect crypto smurfing patterns", "Identify sanctions evasion in trade data".
+    -   The vector engine will find relevant records even if exact words are missing (e.g. matching "Tehran" when searching for "Sanctions").
+
+3.  **Network Pattern Analysis:**
+    -   To identify "Mule Rings" or anomalies by finding multiple unrelated clients sharing the same data points (e.g., same Address, Phone, or Crypto Wallet ID).
+
+**Input Format:**
+-   Query: The search term (name, concept, or address).
+-   Filters: (Optional) Specific fields to match exactly (e.g., dob="1980-05-15").
 
