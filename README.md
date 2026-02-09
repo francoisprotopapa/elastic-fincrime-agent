@@ -15,10 +15,10 @@ The solution relies on 4 Elasticsearch indices. Source files are located in the 
 
 | Index Name | File Source | Description | Search Tech |
 | :--- | :--- | :--- | :--- |
-| `global-clients` | `data/clients.ndjson` | KYC profiles across EMEA, AMER, APJ. | Vector + Fuzzy |
-| `transactions` | `data/transactions.ndjson` | Transaction logs with unstructured notes. | Semantic Text |
-| `internal-policies` | `data/policies.ndjson` | Compliance PDFs and Rulebooks. | ELSER / Vector |
-| `external-news` | `data/news.ndjson` | OSINT, Adverse Media, and Leaks. | Semantic + Keyword |
+| `global-clients` | `data/clients.ndjson` | KYC profiles across EMEA, AMER, APJ. | Hybrid Search |
+| `transactions` | `data/transactions.ndjson` | Transaction logs with unstructured notes. | Hybrid Search |
+| `internal-policies` | `data/policies.ndjson` | Compliance PDFs and Rulebooks. | Hybrid Search |
+| `external-news` | `data/news.ndjson` | OSINT, Adverse Media, and Leaks. | Hybrid Search |
 
 ## 🤖 Agent Configuration
 
