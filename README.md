@@ -74,7 +74,7 @@ Create 4 tools in Elastic Agent Builder mapped to the indices above:
 
 ## 🎬 Demo Scenarios
 
-Detailed step-by-step scripts, prompts, and narratives for the live demonstration are available in **[SCENARIOS](SCENARIOS)**.
+Detailed step-by-step scripts, prompts, and narratives for the live demonstration are available in **[SCENARIOS](/SCENARIOS)**.
 
 The demo follows a **"Top-Down" Investigation Workflow**, designed to simulate a real-world Chief Risk Officer (CRO) experience:
 
